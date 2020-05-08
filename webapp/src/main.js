@@ -7,7 +7,6 @@ import { Button, Cell } from 'mint-ui'
 
 Vue.use(Button)
     .use(Cell)
-
 Vue.config.productionTip = false
 
 new Vue({
