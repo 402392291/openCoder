@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const Router = require('koa-router');
 const glob = require("glob");
-const logger = require('koa-logger')
+//const logger = require('koa-logger')
 const { resolve } = require('path');
 const fs = require('fs');
  
@@ -9,7 +9,7 @@ const app = new Koa();
 const router = new Router({prefix: '/api'});
 const routerMap = {};  // 存放路由映射
 
-app.use(logger());
+//app.use(logger());
 
 // 注册路由
 glob.sync(resolve('./api', "**/*.json")).forEach((item, i) => {
